@@ -3,9 +3,8 @@ import Cards from "./Cards"
 import { Jumbotron } from 'reactstrap';
 import MyCarousel from './MyCarousel';
 import MyNavBar from './MyNavBar.js';
-import './App.css';
 import MyMediaObject from './MyMediaObject';
-
+import './App.css';
 
 
 class App extends Component{
@@ -23,27 +22,19 @@ class App extends Component{
     return(
       <div>
         <MyCarousel />
+
         <MyNavBar />
+        
         <Jumbotron>
           <h1 className="display-3">My First React App</h1>
           <p className={cname}>This is my first attempt at it </p>
-          {/* 
-          <hr className={"my-2"} />
-          <p>Playing with reactstrap</p> 
-          
-          <p className={cname}></p> */}
-
-          
-
         </Jumbotron>
         
-        
-        
         <Cards 
-        fade1 = {this.state.fade1} 
-        cardOneState =  {this.cardOneState} 
-        fade2 = {this.state.fade2}
-        cardTwoState = {this.cardTwoState}
+          fade1 = {this.state.fade1} 
+          cardOneState =  {this.cardOneState} 
+          fade2 = {this.state.fade2}
+          cardTwoState = {this.cardTwoState}
         />
 
         <MyMediaObject/>

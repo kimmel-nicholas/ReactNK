@@ -8,7 +8,7 @@ const Cards = (props) => {
       <Card key="firstCard" className="display-3">
         <CardBody>
           <CardTitle>
-            My Card
+            Click for a surprise
           </CardTitle>
           <Button onClick={() => props.cardOneState()}> Button </Button>
           <Fade in={props.fade1} className="my-2">
@@ -21,7 +21,7 @@ const Cards = (props) => {
       <Card key="secondCard" className="display-3">
         <CardBody>
           <CardTitle>
-            My Second Card
+            Click for another surprise
           </CardTitle>
           <Button onClick={() => props.cardTwoState()}> Button </Button>
           <Fade in={props.fade2} className="my-2">
