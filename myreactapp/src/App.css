@@ -37,15 +37,28 @@
   }
 }
 
-.card{
-  display: inline-flex;
-  width: 45%;
+body{
+  background-color: whitesmoke;
 }
+
+
 
 .carousel{
   background-color:darkslategray;
 }
 
-.navbar{
-  overflow: auto;
+
+.jumbotron{
+  background-color: slategrey;
+  border-radius: 0%;
 }
+
+.card{
+  display: inline-flex;
+  width: 33%; 
+}
+
+.media{
+  padding: 1em;
+}
+
