@@ -18,7 +18,7 @@ const Cards = (props) => {
           </Fade>
         </CardBody>
       </Card>
-      <Card className="display-3">
+      <Card key="secondCard" className="display-3">
         <CardBody>
           <CardTitle>
             My Second Card

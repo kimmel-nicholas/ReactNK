@@ -39,6 +39,13 @@
 
 .card{
   display: inline-flex;
-  width: 30%;
-  
+  width: 45%;
+}
+
+.carousel{
+  background-color:darkslategray;
+}
+
+.navbar{
+  overflow: auto;
 }

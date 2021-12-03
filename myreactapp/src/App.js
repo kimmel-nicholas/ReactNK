@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Cards from "./Cards"
 import { Jumbotron } from 'reactstrap';
 import MyCarousel from './MyCarousel';
+import MyNavBar from './MyNavBar.js';
 import './App.css';
+import MyMediaObject from './MyMediaObject';
+
+
 
 class App extends Component{
   constructor(props){
@@ -18,19 +22,22 @@ class App extends Component{
   let cname = "lead";
     return(
       <div>
-        {/* nav above jumbo */}
         <MyCarousel />
+        <MyNavBar />
         <Jumbotron>
-          {/* implement carousel within */}
-          
-
           <h1 className="display-3">My First React App</h1>
           <p className={cname}>This is my first attempt at it </p>
+          {/* 
           <hr className={"my-2"} />
           <p>Playing with reactstrap</p> 
-          <p className={cname}></p>
+          
+          <p className={cname}></p> */}
+
+          
 
         </Jumbotron>
+        
+        
         
         <Cards 
         fade1 = {this.state.fade1} 
@@ -38,6 +45,8 @@ class App extends Component{
         fade2 = {this.state.fade2}
         cardTwoState = {this.cardTwoState}
         />
+
+        <MyMediaObject/>
         
       </div>
     )
